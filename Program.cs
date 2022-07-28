@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using TextReplacer;
 
-var testString = @"лол Лол лОл лолText, ""я цитата"" лол лолText """;
+var testString = @"лол. Лол. лОл лолText, ""я цитата"" лол лолText """;
 
 var parts = new QuotesSplitterSplitter().SplitParts(new List<ITextPart> { new PlainText(testString) });
 
