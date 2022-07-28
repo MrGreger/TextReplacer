@@ -8,29 +8,28 @@ namespace TextReplacer
 {
     internal class QuotesSplitterSplitter : ITextSplitter
     {
-        public List<string> SplitParts(List<string> parts)
+        public List<ITextPart> SplitParts(List<ITextPart> parts)
         {
-            var result = new List<string>();
+            var result = new List<ITextPart>();
 
             foreach (var part in parts)
             {
                 var partCursor = 0;
                 do
                 {
-
-                    var parsedPart = ParseSimpleText(ref partCursor, part);
+                    var parsedPart = ParseSimpleText(ref partCursor, part.Text);
                     if (!string.IsNullOrEmpty(parsedPart))
                     {
-                        result.Add(parsedPart);
+                        result.Add(new PlainText(parsedPart));
                     }
-                    parsedPart = ParseQuotes(ref partCursor, part);
+                    parsedPart = ParseQuotes(ref partCursor, part.Text);
 
                     if (!string.IsNullOrEmpty(parsedPart))
                     {
-                        result.Add(parsedPart);
+                        result.Add(new QuoutedText(parsedPart));
                     }
 
-                    if (partCursor == part.Length)
+                    if (partCursor == part.Text.Length)
                     {
                         break;
                     }

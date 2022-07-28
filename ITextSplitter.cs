@@ -2,6 +2,6 @@
 {
     internal interface ITextSplitter
     {
-        List<string> SplitParts(List<string> parts);
+        List<ITextPart> SplitParts(List<ITextPart> parts);
     }
 }
