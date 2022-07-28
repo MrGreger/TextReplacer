@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TextReplacer.TextParts;
 
-namespace TextReplacer
+namespace TextReplacer.TextSplitting
 {
     internal class QuotesSplitterSplitter : ITextSplitter
     {

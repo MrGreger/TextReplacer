@@ -1,4 +1,6 @@
-﻿namespace TextReplacer
+﻿using TextReplacer.TextParts;
+
+namespace TextReplacer.TextSplitting
 {
     internal interface ITextSplitter
     {

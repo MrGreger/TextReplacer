@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TextReplacer
+namespace TextReplacer.ReplacementsStorage
 {
     internal partial class InMemoryReplacementDictionary : IReplacementCollection
     {
@@ -18,7 +18,7 @@ namespace TextReplacer
 
         public string GetReplacement(Gender gender, string word)
         {
-            if(!_replacementDictionary.TryGetValue(word, out var replacement))
+            if (!_replacementDictionary.TryGetValue(word, out var replacement))
             {
                 return null;
             }

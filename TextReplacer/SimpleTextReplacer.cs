@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using TextReplacer.ReplacementsStorage;
+using TextReplacer.TextParts;
 using static System.Net.Mime.MediaTypeNames;
 
-namespace TextReplacer
+namespace TextReplacer.TextReplacer
 {
     internal class SimpleTextReplacer
     {

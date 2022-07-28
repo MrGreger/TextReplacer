@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TextReplacer
+namespace TextReplacer.TextParts
 {
     internal class PlainText : ITextPart
     {

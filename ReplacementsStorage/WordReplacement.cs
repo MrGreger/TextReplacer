@@ -1,4 +1,4 @@
-﻿namespace TextReplacer
+﻿namespace TextReplacer.ReplacementsStorage
 {
     public class WordReplacement
     {

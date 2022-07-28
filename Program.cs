@@ -1,5 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using TextReplacer;
+using TextReplacer.ReplacementsStorage;
+using TextReplacer.TextParts;
+using TextReplacer.TextReplacer;
+using TextReplacer.TextSplitting;
 
 var testString = @"лол. Лол. лОл лолText, ""я цитата"" лол лолText """;
 
